@@ -1,0 +1,37 @@
+* {
+	box-sizing: border-box;
+}
+
+html {
+	background-color: white;
+}
+
+body {
+	font-family: 'Space Mono', monospace;
+	font-size: 16px;
+	font-weight: 400;	
+	margin: 0;
+	padding: 0.5em;
+	color: white;
+	background-color: #c870a0;
+}
+
+img {
+	max-width: 30%;
+	height: auto;
+	filter: grayscale(1);
+	mix-blend-mode: screen;
+	border: 5px solid white;
+	transform: scale(1);
+	position: relative;
+	transition: all 1s linear;
+}
+
+img:hover {
+	filter: grayscale(0);
+	mix-blend-mode: unset;
+	border-color: transparent;
+	transform: scale(1.25);
+	z-index: 1;
+}
+
